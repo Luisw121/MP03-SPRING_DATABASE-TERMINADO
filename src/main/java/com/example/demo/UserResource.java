@@ -26,15 +26,6 @@ public class UserResource {
         return new UserDto(savedUser);
     }
 
-    /*
-    {
-    "id":1,
-    "email":"ejempo@ejemplo.com",
-    "fullname":"usuario",
-    "password":"password"
-}
-     */
-
     @GetMapping
     public List<UserDto> readAll(){
         return userController.getAllUsers();
